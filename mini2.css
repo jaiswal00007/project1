@@ -1,0 +1,207 @@
+*{
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+    padding:0;
+    margin:0;
+}
+.web{
+    background-image:url("gaming.jpg");
+    background-size: cover;
+    height: 100vh;
+
+}
+.outer{
+    width:40px;
+    height: 40px;
+    position: absolute;
+    top:10px;
+    left:95%;
+    border:10px solid #f3f3f3;
+    border-top:10px solid rgb(235, 114, 184);
+    border-radius: 50%;
+    animation:outer 1s linear 2 normal;
+}
+@keyframes outer{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.sidebar_menu{
+    position:fixed;
+    /* padding:10px; */
+    /* margin:10px; */
+    left:-300px;
+    height:100%;
+    width:300px;
+    background-color: rgba(8, 0, 8,0.5);
+    box-shadow:0 0 8px rgba(255,255,255,0.5);
+    line-height: 60px;
+    font-weight: bold;
+    transition:all 0.3s linear;
+}
+.sidebar_menu .logo a{
+    position:absolute;
+    left:60px;
+    padding:0 20px;
+    text-decoration: none;
+    color:white;
+}
+.sidebar_menu .menu{
+    position: relative;
+    top:10x;
+}
+.sidebar_menu .menu ul li a{
+    color:white;
+    text-decoration: none;
+}
+.sidebar_menu .menu ul li{
+    padding:8px 20px;
+    margin-top: 5px;
+}
+li i{
+    color:white;
+}
+#click{
+    display:none;
+}
+.social ul a{
+    color:white;
+    margin-right:3px;
+    padding-right: 2px;
+    color:rgba(255, 255, 255, 0.76);
+    opacity: 0.5;
+}
+.social ul a i{
+    color:rgba(255, 255, 255, 0.76);
+    opacity: 0.5;
+}
+.social{
+    position: relative;
+    left:70px;
+ 
+}
+.sidebar_menu #det a{
+    position: relative;
+    text-decoration: none;
+    color:white;
+    left:90px;
+    padding:5px;
+}
+.logo1{
+    position: absolute;
+    color:rgb(255, 0, 230);
+    top:10px;
+    left:33%;
+    font-size:50px;
+    /* text-decoration:underline rgb(230, 3, 214); */
+    animation:text 2s ease-in 1;
+}
+.flexbox{
+    display: flex;
+    height:700px;
+    width:850px;
+    position:absolute;
+    top:90px;
+    left:350px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.content{
+    box-shadow: 0 0 6px whitesmoke;
+    height: 270px;
+    width: 250px;
+    border-radius: 20px;
+}
+.content img{
+    height:225px;
+    background-color: black;
+    width:250px;
+    border-radius: 20px;
+}
+.content .button a{
+    text-decoration: none;
+    color: black;
+}
+.content .button{
+    display:block;
+    background-color:rgba(192, 192, 192, 0.5);
+    box-shadow: 0 0 4px whitesmoke;
+    position: relative;
+    width:100%;
+    border-radius: 0 0 20px 20px;
+    
+}
+
+.content .button:hover{
+    background-color:rgba(192, 192, 192, 1);
+}
+.content img:hover{
+    opacity: 0.5;
+}
+.sidebar_menu .menu ul li:hover,.sidebar_menu #det a:hover,.sidebar_menu .logo a:hover{
+    box-shadow: 0 0 6px rgba(255,255,255,0.5); 
+}
+.social ul a i:hover{
+    transform:scale(1.1);
+    opacity: 1;
+}
+.btn #ham{
+    color:white;
+    position:absolute;
+    top:15px;
+    left:20px;
+}
+.click2 #cancel{
+    color:white;
+    position:relative;
+    left:260px;
+}
+.eye i{
+    font-size:90px;
+    color:rgb(255, 0, 191);
+    animation:eye 2s ease-in 1;
+    transform: rotate(90deg);
+}
+.eye{
+    position:absolute;
+    top:480px;
+    left:750px;
+}
+/* .eye1{
+    position:absolute;
+    top:480px;
+    left:650px;
+} */
+#ham i:hover,#cancel i:hover{
+    font-size:30px;
+    transition:all 0.2s linear;
+}
+#click:checked ~ .sidebar_menu{
+    left:0;
+}
+#click:checked ~.btn #ham i{
+    opacity: 0;
+}
+@keyframes text{
+    from{
+        font-size:20px;
+    }
+    to{
+        font-size:50px;
+    }
+}
+/* .logo1:hover{
+    text-decoration: rgba(236, 0, 201, 0.865);
+} */
+@keyframes eye{
+    from{
+        font-size:30px;
+    }
+    to{
+        font-size: 90px;
+    }
+}
